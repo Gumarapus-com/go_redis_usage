@@ -7,9 +7,7 @@ import (
 	"github.com/redis/go-redis/v9"
 )
 
-var (
-	redisListKey = "redis_list"
-)
+var redisListKey = "redis_list"
 
 func List(rdb *redis.Client, ctx context.Context) {
 	fmt.Println("LPUSH")
